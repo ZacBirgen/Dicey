@@ -38,7 +38,6 @@ function rerollOnes(){
     if (ones){
         ones = false;
     }else{
-        document.write(ones)//For Testing
         ones = true;
     }
 }
