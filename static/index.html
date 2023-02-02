@@ -13,33 +13,40 @@
     <body>
         <script src="dice.js"></script>
         
-        <div class="container">
-            <h1>Dicey</h1>
-        </div>
         <div class="container-fluid">
-            <div class="row my-custom-row justify=content-center align-items-center">
-              <div class="col-sm-2" style="background-color:lavender;">
-                <button id="first" onclick="document.getElementById('first').innerHTML = rollDice()">Generate a 6</button>
+            <h1>Dicey</h1>
+            <div class="row"></div>
+                <div class="col-sm-6 text-center" style="background-color:lavender;">
+                    <button class="btn btn-danger btn-lg" id="all" onclick="rollAllDice()">Roll</button>
+                </div>
+                <div class="checkbox text-center">
+                    <label><input type="checkbox" onclick="reRollOnes()" value="">ReRoll 1s</label>
+                </div>
             </div>
-              <div class="col-sm-2" style="background-color:lavenderblush;">
-                <button id="second" onclick="document.getElementById('second').innerHTML = rollDice()">Generate a 6</button>
+        </div>
+
+        <div class="container-fluid">
+            <div class="row">
+              <div class="col-sm-2 text-center" style="background-color:lavender;">
+                <button class="btn btn-info btn-lg" id="first" onclick="rollDice('first')">Generate a 6</button>
             </div>
-              <div class="col-sm-2" style="background-color:lavender;">
-                <button id="third" onclick="document.getElementById('third').innerHTML = rollDice()">Generate a 6</button>
+              <div class="col-sm-2 text-center" style="background-color:lavenderblush;">
+                <button class="btn btn-info btn-lg" id="second" onclick="rollDice('second')">Generate a 6</button>
             </div>
-              <div class="col-sm-2" style="background-color:lavenderblush;">
-                <button id="fourth" onclick="document.getElementById('fourth').innerHTML = rollDice()">Generate a 6</button>
+              <div class="col-sm-2 text-center" style="background-color:lavender;">
+                <button class="btn btn-info btn-lg" id="third" onclick="rollDice('third')">Generate a 6</button>
             </div>
-              <div class="col-sm-2" style="background-color:lavender;">
-                <button id="fifth" onclick="document.getElementById('fifth').innerHTML = rollDice()">Generate a 6</button>
+              <div class="col-sm-2 text-center" style="background-color:lavenderblush;">
+                <button class="btn btn-info btn-lg" id="fourth" onclick="rollDice('fourth')">Generate a 6</button>
             </div>
-              <div class="col-sm-2" style="background-color:lavenderblush;">
-                <button id="sixth" onclick="document.getElementById('sixth').innerHTML = rollDice()">Generate a 6</button>
+              <div class="col-sm-2 text-center" style="background-color:lavender;">
+                <button class="btn btn-info btn-lg" id="fifth" onclick="rollDice('fifth')">Generate a 6</button>
+            </div>
+              <div class="col-sm-2 text-center" style="background-color:lavenderblush;">
+                <button class="btn btn-info btn-lg" id="sixth" onclick="rollDice('sixth')">Generate a 6</button>
             </div>
             </div>
           </div>
-        
-        
         
     </body>
 </html>
