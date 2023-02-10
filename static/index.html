@@ -17,13 +17,16 @@
             <h1>Ability Score Generator</h1>
             <h4>4d6 Drop the Lowest</h4>
               <div class="row"></div>
-                <div class="col-sm-4 text-center" style="background-color:lavender;">
+                <div class="col-sm-3 text-center" style="background-color:lavender;">
                     <button class="btn btn-success" data-toggle="modal" data-target="#myModal">Instructions</button>
                 </div>
-                <div class="col-sm-4 text-center" style="background-color:lavender;">
+                <div class="col-sm-3 text-center" style="background-color:lavender;">
                     <button class="btn btn-danger btn-lg" id="all" onclick="rollAllDice()" autofocus>Roll</button>
                 </div>
-                <div class="col-sm-4 text-center" style="background-color:lavender;">
+                <div class="col-sm-3 text-center" style="background-color:lavender;">
+                  <button class="btn btn-primary" id="showButton" data-toggle="collapse" data-target="#collapseRolls" onclick="showToggle()">Show Rolls</button>
+                </div>
+                <div class="col-sm-3 text-center" style="background-color:lavender;">
                     <label><input type="checkbox" id="myCheck" onclick="rerollOnes()"> ReRoll 1s</label>
                 </div>
             </div>
@@ -31,23 +34,46 @@
 
         <div class="container-fluid">
             <div class="row">
-              <div class="col-sm-2 text-center" style="background-color:lavender;">
-                <button class="btn btn-info btn-lg" id="first" onclick="rollDice('first')">Generate a 6</button>
+              <div class="col-xs-6 col-sm-2 text-center" style="background-color:lavender;">
+                <button class="btn btn-info btn-lg" id="first" onclick="rollDice('first')">Generate</button>
               </div>
-              <div class="col-sm-2 text-center" style="background-color:lavenderblush;">
-                <button class="btn btn-info btn-lg" id="second" onclick="rollDice('second')">Generate a 6</button>
+              <div class="col-xs-6 col-sm-2 text-center" style="background-color:lavenderblush;">
+                <button class="btn btn-info btn-lg" id="second" onclick="rollDice('second')">Generate</button>
               </div>
-              <div class="col-sm-2 text-center" style="background-color:lavender;">
-                <button class="btn btn-info btn-lg" id="third" onclick="rollDice('third')">Generate a 6</button>
+              <div class="col-xs-6 col-sm-2 text-center" style="background-color:lavender;">
+                <button class="btn btn-info btn-lg" id="third" onclick="rollDice('third')">Generate</button>
               </div>
-              <div class="col-sm-2 text-center" style="background-color:lavenderblush;">
-                <button class="btn btn-info btn-lg" id="fourth" onclick="rollDice('fourth')">Generate a 6</button>
+              <div class="col-xs-6 col-sm-2 text-center" style="background-color:lavenderblush;">
+                <button class="btn btn-info btn-lg" id="fourth" onclick="rollDice('fourth')">Generate</button>
               </div>
-              <div class="col-sm-2 text-center" style="background-color:lavender;">
-                <button class="btn btn-info btn-lg" id="fifth" onclick="rollDice('fifth')">Generate a 6</button>
+              <div class="col-xs-6 col-sm-2 text-center" style="background-color:lavender;">
+                <button class="btn btn-info btn-lg" id="fifth" onclick="rollDice('fifth')">Generate</button>
               </div>
-              <div class="col-sm-2 text-center" style="background-color:lavenderblush;">
-                <button class="btn btn-info btn-lg" id="sixth" onclick="rollDice('sixth')">Generate a 6</button>
+              <div class="col-xs-6 col-sm-2 text-center" style="background-color:lavenderblush;">
+                <button class="btn btn-info btn-lg" id="sixth" onclick="rollDice('sixth')">Generate</button>
+              </div>
+            </div>
+            
+            <div class="row" id="rolls">
+              <div class="collapse" id="collapseRolls">
+                <div class="col-sm-2 text-center" style="background-color:lavender;">
+                  <p id="rollsfirst">Secrets</p>
+                </div>
+                <div class="col-sm-2 text-center" style="background-color:lavenderblush;">
+                  <p id="rollssecond">Secrets</p>
+                </div>
+                <div class="col-sm-2 text-center" style="background-color:lavender;">
+                  <p id="rollsthird">Secrets</p>
+                </div>
+                <div class="col-sm-2 text-center" style="background-color:lavenderblush;">
+                  <p id="rollsfourth">Secrets</p>
+                </div>
+                <div class="col-sm-2 text-center" style="background-color:lavender;">
+                  <p id="rollsfifth">Secrets</p>
+                </div>
+                <div class="col-sm-2 text-center" style="background-color:lavenderblush;">
+                  <p id="rollssixth">Secrets</p>
+                </div>
               </div>
             </div>
         </div>
